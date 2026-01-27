@@ -1,0 +1,53 @@
+{
+  "nodes": [
+    {
+      "id": "input",
+      "type": "inputNode",
+      "name": "Request",
+      "position": { "x": 0, "y": 100 },
+      "content": { "schema": "" }
+    },
+    {
+      "id": "business-hours",
+      "type": "decisionTableNode",
+      "name": "Business Hours",
+      "position": { "x": 300, "y": 100 },
+      "content": {
+        "hitPolicy": "first",
+        "inputs": [
+          { "id": "i_day", "name": "Day Of Week", "field": "day_of_week" },
+          { "id": "i_min", "name": "Minutes Since Midnight", "field": "minutes" }
+        ],
+        "outputs": [
+          { "id": "o_msg", "name": "Message", "field": "message" }
+        ],
+        "rules": [
+          { "_id": "r_open_mon_wed", "i_day": "[1..3]", "i_min": "[480..1020]", "o_msg": "\"yes we are open\"" },
+          { "_id": "r_open_thu", "i_day": "4", "i_min": "[480..1260]", "o_msg": "\"yes we are open\"" },
+          { "_id": "r_open_fri", "i_day": "5", "i_min": "[480..900]", "o_msg": "\"yes we are open\"" },
+          { "_id": "r_closed", "i_day": "", "i_min": "", "o_msg": "\"sorry we are closed\"" }
+        ],
+        "passThrough": false,
+        "inputField": null,
+        "outputPath": null,
+        "executionMode": "single"
+      }
+    },
+    {
+      "id": "output",
+      "type": "outputNode",
+      "name": "Response",
+      "position": { "x": 600, "y": 100 },
+      "content": { "schema": "" }
+    }
+  ],
+  "edges": [
+    { "id": "e1", "sourceId": "input", "targetId": "business-hours", "sourceHandle": null, "type": "edge" },
+    { "id": "e2", "sourceId": "business-hours", "targetId": "output", "sourceHandle": null, "type": "edge" }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "author": "",
+    "description": "Business hours decision"
+  }
+}

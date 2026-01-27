@@ -1,0 +1,8 @@
+day_of_week,open_time,close_time,is_business_day
+Monday,08:00,17:00,true
+Tuesday,08:00,17:00,true
+Wednesday,08:00,17:00,true
+Thursday,08:00,21:00,true
+Friday,08:00,15:00,true
+Saturday,,,false
+Sunday,,,false

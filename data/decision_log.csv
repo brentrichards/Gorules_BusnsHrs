@@ -1,0 +1,46 @@
+generated_at_iso,date,time,day_of_week_name,day_of_week_num,minutes,gorules_input_json,gorules_output_message
+2026-08-06T05:06:48,2026-08-06,05:06,Thursday,4,306,"{""day_of_week"":4,""minutes"":306}",sorry we are closed
+2026-09-01T04:46:35,2026-09-01,04:46,Tuesday,2,286,"{""day_of_week"":2,""minutes"":286}",sorry we are closed
+2026-05-16T13:44:47,2026-05-16,13:44,Saturday,6,824,"{""day_of_week"":6,""minutes"":824}",sorry we are closed
+2026-09-10T06:25:48,2026-09-10,06:25,Thursday,4,385,"{""day_of_week"":4,""minutes"":385}",sorry we are closed
+2026-03-27T07:37:10,2026-03-27,07:37,Friday,5,457,"{""day_of_week"":5,""minutes"":457}",sorry we are closed
+2026-03-13T19:35:28,2026-03-13,19:35,Friday,5,1175,"{""day_of_week"":5,""minutes"":1175}",sorry we are closed
+2026-08-31T11:09:02,2026-08-31,11:09,Monday,1,669,"{""day_of_week"":1,""minutes"":669}",yes we are open
+2026-02-22T13:34:31,2026-02-22,13:34,Sunday,7,814,"{""day_of_week"":7,""minutes"":814}",sorry we are closed
+2026-12-18T10:51:11,2026-12-18,10:51,Friday,5,651,"{""day_of_week"":5,""minutes"":651}",yes we are open
+2026-09-19T04:23:33,2026-09-19,04:23,Saturday,6,263,"{""day_of_week"":6,""minutes"":263}",sorry we are closed
+2026-12-16T13:59:44,2026-12-16,13:59,Wednesday,3,839,"{""day_of_week"":3,""minutes"":839}",yes we are open
+2026-06-05T16:17:12,2026-06-05,16:17,Friday,5,977,"{""holiday"":{""date"":""2026-06-05""},""business_hours"":{""day_of_week"":5,""minutes"":977}}",sorry we are closed
+2026-12-25T09:00:00,2026-12-25,09:00,Friday,5,540,"{""holiday"":{""date"":""2026-12-25""},""business_hours"":{""day_of_week"":5,""minutes"":540}}",we are closed on this public holiday
+2026-03-17T10:49:25,2026-03-17,10:49,Tuesday,2,649,"{""holiday"":{""date"":""2026-03-17""},""business_hours"":{""day_of_week"":2,""minutes"":649}}",yes we are open
+2026-09-07T15:32:59,2026-09-07,15:32,Monday,1,932,"{""holiday"":{""date"":""2026-09-07""},""business_hours"":{""day_of_week"":1,""minutes"":932}}",yes we are open
+2026-05-02T02:22:09,2026-05-02,02:22,Saturday,6,142,"{""holiday"":{""date"":""2026-05-02""},""business_hours"":{""day_of_week"":6,""minutes"":142}}",sorry we are closed
+2026-08-04T12:44:29,2026-08-04,12:44,Tuesday,2,764,"{""holiday"":{""date"":""2026-08-04""},""business_hours"":{""day_of_week"":2,""minutes"":764}}",yes we are open
+2026-12-01T03:03:21,2026-12-01,03:03,Tuesday,2,183,"{""holiday"":{""date"":""2026-12-01""},""business_hours"":{""day_of_week"":2,""minutes"":183}}",sorry we are closed
+2026-01-01T09:00:00,2026-01-01,09:00,Thursday,4,540,"{""holiday"":{""date"":""2026-01-01""},""business_hours"":{""day_of_week"":4,""minutes"":540}}",we are closed on this public holiday
+2026-12-17T09:29:15,2026-12-17,09:29,Thursday,4,569,"{""date"":""2026-12-17"",""day_of_week"":4,""minutes"":569}",
+2026-12-10T05:17:59,2026-12-10,05:17,Thursday,4,317,"{""date"":""2026-12-10"",""day_of_week"":4,""minutes"":317}",
+2026-03-25T22:37:43,2026-03-25,22:37,Wednesday,3,1357,"{""date"":""2026-03-25"",""day_of_week"":3,""minutes"":1357}",
+2026-08-31T02:26:17,2026-08-31,02:26,Monday,1,146,"{""date"":""2026-08-31"",""day_of_week"":1,""minutes"":146}",sorry we are closed
+2026-01-01T09:00:00,2026-01-01,09:00,Thursday,4,540,"{""date"":""2026-01-01"",""day_of_week"":4,""minutes"":540}",we are closed on this public holiday
+2026-01-22T09:00:00,2026-01-22,09:00,Thursday,4,540,"{""date"":""2026-01-22"",""day_of_week"":4,""minutes"":540}",sorry we are closed
+2026-01-13T09:00:00,2026-01-13,09:00,Tuesday,2,540,"{""date"":""2026-01-13"",""day_of_week"":2,""minutes"":540}",sorry we are closed
+2026-01-13T14:00:00,2026-01-13,14:00,Tuesday,2,840,"{""date"":""2026-01-13"",""day_of_week"":2,""minutes"":840}",sorry we are closed
+2026-05-19T14:00:00,2026-05-19,14:00,Tuesday,2,840,"{""date"":""2026-05-19"",""day_of_week"":2,""minutes"":840}",sorry we are closed
+2026-05-19T12:30:00,2026-05-19,12:30,Tuesday,2,750,"{""date"":""2026-05-19"",""day_of_week"":2,""minutes"":750}",sorry we are closed
+2026-02-03T11:13:04,2026-02-03,11:13,Tuesday,2,673,"{""date"":""2026-02-03"",""day_of_week"":2,""minutes"":673}",yes we are open
+2026-01-01T09:00:00,2026-01-01,09:00,Thursday,4,540,"{""date"":""2026-01-01"",""day_of_week"":4,""minutes"":540}",we are closed on this public holiday
+2026-01-14T09:00:00,2026-01-14,09:00,Wednesday,3,540,"{""date"":""2026-01-14"",""day_of_week"":3,""minutes"":540}",yes we are open
+2026-01-16T16:00:00,2026-01-16,16:00,Friday,5,960,"{""date"":""2026-01-16"",""day_of_week"":5,""minutes"":960}",sorry we are closed
+2026-02-19T08:49:25,2026-02-19,08:49,Thursday,4,529,"{""date"":""2026-02-19"",""day_of_week"":4,""minutes"":529}",yes we are open
+2026-11-14T09:58:20,2026-11-14,09:58,Saturday,6,598,"{""date"":""2026-11-14"",""day_of_week"":6,""minutes"":598}",sorry we are closed
+2026-05-12T22:32:48,2026-05-12,22:32,Tuesday,2,1352,"{""date"":""2026-05-12"",""day_of_week"":2,""minutes"":1352}",sorry we are closed
+2026-05-11T05:33:31,2026-05-11,05:33,Monday,1,333,"{""date"":""2026-05-11"",""day_of_week"":1,""minutes"":333}",sorry we are closed
+2026-08-31T00:45:49,2026-08-31,00:45,Monday,1,45,"{""date"":""2026-08-31"",""day_of_week"":1,""minutes"":45}",sorry we are closed
+2026-09-01T08:05:06,2026-09-01,08:05,Tuesday,2,485,"{""date"":""2026-09-01"",""day_of_week"":2,""minutes"":485}",yes we are open
+2026-05-02T23:45:58,2026-05-02,23:45,Saturday,6,1425,"{""date"":""2026-05-02"",""day_of_week"":6,""minutes"":1425}",sorry we are closed
+2026-12-12T19:25:43,2026-12-12,19:25,Saturday,6,1165,"{""date"":""2026-12-12"",""day_of_week"":6,""minutes"":1165}",sorry we are closed
+2026-01-06T09:30:00,2026-01-06,09:30,Tuesday,2,570,"{""date"":""2026-01-06"",""day_of_week"":2,""minutes"":570}",yes we are open
+2026-05-07T09:30:00,2026-05-07,09:30,Thursday,4,570,"{""date"":""2026-05-07"",""day_of_week"":4,""minutes"":570}",yes we are open
+2026-12-24T09:30:00,2026-12-24,09:30,Thursday,4,570,"{""date"":""2026-12-24"",""day_of_week"":4,""minutes"":570}",yes we are open
+2026-12-25T09:30:00,2026-12-25,09:30,Friday,5,570,"{""date"":""2026-12-25"",""day_of_week"":5,""minutes"":570}",we are closed on this public holiday

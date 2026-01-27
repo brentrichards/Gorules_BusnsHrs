@@ -1,0 +1,208 @@
+{
+  "nodes": [
+    {
+      "id": "input",
+      "type": "inputNode",
+      "name": "Request",
+      "position": {
+        "x": 0,
+        "y": 100
+      },
+      "content": {
+        "schema": ""
+      }
+    },
+    {
+      "id": "public-holidays",
+      "type": "decisionTableNode",
+      "name": "Public Holidays",
+      "position": {
+        "x": 300,
+        "y": 100
+      },
+      "content": {
+        "hitPolicy": "first",
+        "inputs": [
+          {
+            "id": "i_date",
+            "name": "Date",
+            "field": "date"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "o_msg",
+            "name": "Message",
+            "field": "message"
+          },
+          {
+            "id": "o_name",
+            "name": "Holiday Name",
+            "field": "holiday_name"
+          },
+          {
+            "id": "o_day",
+            "name": "Day",
+            "field": "day_of_week"
+          },
+          {
+            "id": "o_loc",
+            "name": "Location",
+            "field": "location"
+          }
+        ],
+        "rules": [
+          {
+            "_id": "r_2026_01_01",
+            "i_date": "\"2026-01-01\"",
+            "o_msg": "\"we are closed on this public holiday\"",
+            "o_name": "\"New Year's Day\"",
+            "o_day": "\"Thursday\"",
+            "o_loc": "\"Statewide\""
+          },
+          {
+            "_id": "r_2026_01_26",
+            "i_date": "\"2026-01-26\"",
+            "o_msg": "\"we are closed on this public holiday\"",
+            "o_name": "\"Australia Day\"",
+            "o_day": "\"Monday\"",
+            "o_loc": "\"Statewide\""
+          },
+          {
+            "_id": "r_2026_04_03",
+            "i_date": "\"2026-04-03\"",
+            "o_msg": "\"we are closed on this public holiday\"",
+            "o_name": "\"Good Friday\"",
+            "o_day": "\"Friday\"",
+            "o_loc": "\"Statewide\""
+          },
+          {
+            "_id": "r_2026_04_04",
+            "i_date": "\"2026-04-04\"",
+            "o_msg": "\"we are closed on this public holiday\"",
+            "o_name": "\"The day after Good Friday\"",
+            "o_day": "\"Saturday\"",
+            "o_loc": "\"Statewide\""
+          },
+          {
+            "_id": "r_2026_04_05",
+            "i_date": "\"2026-04-05\"",
+            "o_msg": "\"we are closed on this public holiday\"",
+            "o_name": "\"Easter Sunday\"",
+            "o_day": "\"Sunday\"",
+            "o_loc": "\"Statewide\""
+          },
+          {
+            "_id": "r_2026_04_06",
+            "i_date": "\"2026-04-06\"",
+            "o_msg": "\"we are closed on this public holiday\"",
+            "o_name": "\"Easter Monday\"",
+            "o_day": "\"Monday\"",
+            "o_loc": "\"Statewide\""
+          },
+          {
+            "_id": "r_2026_04_25",
+            "i_date": "\"2026-04-25\"",
+            "o_msg": "\"we are closed on this public holiday\"",
+            "o_name": "\"Anzac Day\"",
+            "o_day": "\"Saturday\"",
+            "o_loc": "\"Statewide\""
+          },
+          {
+            "_id": "r_2026_05_04",
+            "i_date": "\"2026-05-04\"",
+            "o_msg": "\"we are closed on this public holiday\"",
+            "o_name": "\"Labour Day\"",
+            "o_day": "\"Monday\"",
+            "o_loc": "\"Statewide\""
+          },
+          {
+            "_id": "r_2026_08_12",
+            "i_date": "\"2026-08-12\"",
+            "o_msg": "\"we are closed on this public holiday\"",
+            "o_name": "\"Royal Queensland Show\"",
+            "o_day": "\"Wednesday\"",
+            "o_loc": "\"Brisbane Area Only\""
+          },
+          {
+            "_id": "r_2026_10_05",
+            "i_date": "\"2026-10-05\"",
+            "o_msg": "\"we are closed on this public holiday\"",
+            "o_name": "\"King's Birthday\"",
+            "o_day": "\"Monday\"",
+            "o_loc": "\"Statewide\""
+          },
+          {
+            "_id": "r_2026_12_25",
+            "i_date": "\"2026-12-25\"",
+            "o_msg": "\"we are closed on this public holiday\"",
+            "o_name": "\"Christmas Day\"",
+            "o_day": "\"Friday\"",
+            "o_loc": "\"Statewide\""
+          },
+          {
+            "_id": "r_2026_12_26",
+            "i_date": "\"2026-12-26\"",
+            "o_msg": "\"we are closed on this public holiday\"",
+            "o_name": "\"Boxing Day\"",
+            "o_day": "\"Saturday\"",
+            "o_loc": "\"Statewide\""
+          },
+          {
+            "_id": "r_2026_12_28",
+            "i_date": "\"2026-12-28\"",
+            "o_msg": "\"we are closed on this public holiday\"",
+            "o_name": "\"Additional holiday for Boxing Day\"",
+            "o_day": "\"Monday\"",
+            "o_loc": "\"Statewide\""
+          },
+          {
+            "_id": "r_not_holiday",
+            "i_date": "",
+            "o_msg": "\"\"",
+            "o_name": "\"\"",
+            "o_day": "\"\"",
+            "o_loc": "\"\""
+          }
+        ],
+        "passThrough": false,
+        "inputField": null,
+        "outputPath": null,
+        "executionMode": "single"
+      }
+    },
+    {
+      "id": "output",
+      "type": "outputNode",
+      "name": "Response",
+      "position": {
+        "x": 600,
+        "y": 100
+      },
+      "content": {
+        "schema": ""
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "sourceId": "input",
+      "targetId": "public-holidays",
+      "sourceHandle": null,
+      "type": "edge"
+    },
+    {
+      "id": "e2",
+      "sourceId": "public-holidays",
+      "targetId": "output",
+      "sourceHandle": null,
+      "type": "edge"
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "author": "",
+    "description": "Public holidays decision"
+  }
+}
