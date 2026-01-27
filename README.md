@@ -4,7 +4,7 @@ This repo contains two small Streamlit proof-of-concept apps that evaluate busin
 
 ## Two approaches
 
-### PoC1 ? two separate decisions (app?level switch)
+### PoC1 = two separate decisions (app?level switch)
 - Files: `streamlit_app.py`, `rules/business_hours.jdm.json`, `rules/public_holidays.jdm.json`
 - Flow:
   1) Evaluate **Public Holidays** decision with `{ date }`.
@@ -12,7 +12,7 @@ This repo contains two small Streamlit proof-of-concept apps that evaluate busin
   3) Otherwise evaluate **Business Hours** with `{ day_of_week, minutes }`.
 - The ?switch? logic is in Python (the Streamlit app decides which result to show).
 
-### PoC2 ? single JDM with two tables (model?level switch)
+### PoC2 = single JDM with two tables (model?level switch)
 - Files: `streamlit_app2.py`, `rules/combined_business_and_holidays.jdm.json`
 - Flow:
   1) One decision call sends `{ date, day_of_week, minutes }`.
@@ -21,15 +21,15 @@ This repo contains two small Streamlit proof-of-concept apps that evaluate busin
 - The ?switch? logic is inside the JDM model rather than the app.
 
 ## Business hours rules
-- Mon?Wed: 08:00?17:00
+- Mon-Wed: 08:00?17:00
 - Thu: 08:00?21:00
 - Fri: 08:00?15:00
 - Sat/Sun: closed
 
 ## Data files
-- `data/2026_pubhol_QLD.csv` ? public holidays (date, day, holiday name, location)
-- `data/business_hours.csv` ? lookup table for hours
-- `data/decision_log.csv` ? appended log of each evaluation
+- `data/2026_pubhol_QLD.csv` - public holidays (date, day, holiday name, location)
+- `data/business_hours.csv` - lookup table for hours
+- `data/decision_log.csv` - appended log of each evaluation
 
 ## Run
 1) Create/activate your virtual environment (e.g., `gorules`).
