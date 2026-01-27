@@ -1,6 +1,6 @@
 # GoRules Business Hours PoC
 
-This repo contains two small Streamlit proof?of?concept apps that evaluate business hours using GoRules (zen?engine). Both use a 2026 public?holiday list and a weekday/time business?hours table.
+This repo contains two small Streamlit proof-of-concept apps that evaluate business hours using GoRules (zen engine). Both use a 2026 public holiday list and a weekday/time business-hours table.
 
 ## Two approaches
 
