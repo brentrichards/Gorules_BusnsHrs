@@ -10,7 +10,7 @@ Files:
 
 Logic:
 - The Streamlit app evaluates **public holidays first** and only evaluates business hours if no holiday message is returned.
-- The ?switch? happens **in Python**.
+- The "switch" happens **in Python**.
 
 Code (PoC1):
 ```python
@@ -33,7 +33,7 @@ Logic:
 - The Streamlit app makes **one** decision call.
 - The **JDM model** contains two decision tables (Public Holidays + Business Hours).
 - An **expression node** decides which message to return based on `is_holiday`.
-- The ?switch? happens **inside the JDM** (not in Python).
+- The "switch" happens **inside the JDM** (not in Python).
 
 Code (PoC2):
 ```python
