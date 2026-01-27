@@ -4,21 +4,21 @@ This repo contains two small Streamlit proof-of-concept apps that evaluate busin
 
 ## Two approaches
 
-### PoC1 = two separate decisions (app?level switch)
+### PoC1 = two separate decisions (app-level switch)
 - Files: `streamlit_app.py`, `rules/business_hours.jdm.json`, `rules/public_holidays.jdm.json`
 - Flow:
   1) Evaluate **Public Holidays** decision with `{ date }`.
   2) If a holiday is found, return **"we are closed on this public holiday"**.
   3) Otherwise evaluate **Business Hours** with `{ day_of_week, minutes }`.
-- The ?switch? logic is in Python (the Streamlit app decides which result to show).
+- The "switch" logic is in Python (the Streamlit app decides which result to show).
 
-### PoC2 = single JDM with two tables (model?level switch)
+### PoC2 = single JDM with two tables (model-level switch)
 - Files: `streamlit_app2.py`, `rules/combined_business_and_holidays.jdm.json`
 - Flow:
   1) One decision call sends `{ date, day_of_week, minutes }`.
   2) The model evaluates **Public Holidays** and **Business Hours** in the same graph.
-  3) An **expression node** (?Final Message?) chooses the holiday result if `is_holiday == true`, otherwise uses the business?hours message.
-- The ?switch? logic is inside the JDM model rather than the app.
+  3) An **expression node** (?Final Message?) chooses the holiday result if `is_holiday == true`, otherwise uses the business-hours message.
+- The "switch" logic is inside the JDM model rather than the app.
 
 ## Business hours rules
 - Mon-Wed: 08:00?17:00
