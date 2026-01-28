@@ -49,6 +49,8 @@ If you want a local visual editor/simulator for JDM files, you can run the offic
 ```
 docker run -p 3000:3000 --platform=linux/amd64 gorules/editor
 ```
+There is also an online version here https://editor.gorules.io/ 
+
 
 ## Notes
 - Both apps allow a random 2026 date/time or a manual input.
